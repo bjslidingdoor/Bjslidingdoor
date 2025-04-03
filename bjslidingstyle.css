@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.gambar1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4A90E2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+.gambar1 {
+    width: 100%;
+    max-width: 250px; /* Membatasi lebar maksimal */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centering gambar */
+    display: block; /* Memastikan gambar adalah blok elemen */
+}
+
+.text-content {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 20px; /* Menambah jarak dari elemen di atasnya */
+    text-align: justify; /* Menyusun teks agar rata kiri-kanan */
+}
+.heading {
+    padding: 10px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slide-gambar2 {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-image.hidden {
+    opacity: 0;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.card {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(4px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slide-container-auto1,
+.slide-container-auto2,
+.slide-container-auto3 {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide-auto1,
+.slide-auto2,
+.slide-auto3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.active-auto1,
+.active-auto2,
+.active-auto3 {
+    opacity: 1;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.upgrade {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.upgrade h2 {
+    font-size: 2em;
+}
+
+.cta-button {
+    background-color: #28a745;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.feature-box i {
+    font-size: 2.5em;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.vector {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contact {
+    background-color: #28a745;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .slide-container-auto1,
+    .slide-container-auto2,
+    .slide-container-auto3 {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+    .gambar1 {
+        max-width: 100%; /* Memastikan gambar memenuhi lebar layar pada perangkat kecil */
+    }
+    
+    .text-content {
+        font-size: 14px; /* Menyesuaikan ukuran font pada layar kecil */
+    }
+    
+}

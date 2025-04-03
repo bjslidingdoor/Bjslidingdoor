@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="bjslidingstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJ Slidingdoor - Layanan Profesional Sliding Door Mobil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        function sendMessage() {
+            const phoneNumber = "6282258522901";
+            const message = encodeURIComponent(document.getElementById('message').value);
+            window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <header>
+        <h1 class="text-3xl font-bold">BJ Slidingdoor</h1>
+        <nav>
+            <a href="#about" class="mr-4">Tentang Kami</a>
+            <a href="#services" class="mr-4">Layanan</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="text-4xl font-bold mb-2">Solusi Sliding Door Mobil Terbaik</h2>
+        <p class="text-lg">Perbaikan cepat, suku cadang original, dan layanan profesional.</p>
+
+    </section>
+    <table>
+        <tr>
+            <td> </td>
+            <td> <img src="gambar/alphard-slidingdoor.png" class="gambar1"></td>
+            <td>Keunggulan Sliding Door Mobil: <br>
+                <br>
+                Praktis & Modern: Mudah dioperasikan, bahkan secara otomatis.
+                <br>   
+                Hemat Ruang: Cocok untuk area sempit.
+                <br>
+                Aman & Nyaman: Mengurangi risiko pintu terbuka secara tiba-tiba.
+                <br>
+                Estetis: Menambah kesan mewah pada mobil.
+        </tr>
+</table>
+   
+
+    <section id="about" class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Kenapa Memilih Kami?</h2>
+        <p> Kami adalah spesialis dalam jasa perbaikan dan pemasangan <br>
+             sliding door mobil dengan layanan profesional, cepat, dan berkualitas tinggi.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card p-4 bg-white rounded-lg">
+                <h3 class="text-xl font-bold">Teknisi Ahli</h3>
+                <p>Berpengalaman dan profesional dalam perbaikan sliding door mobil.</p>
+                <section class="slide-container-auto2">
+                    <img src="gambar/sparepart/sparepart (1).jpeg" class="slide-auto2 active-auto2" id="slide-auto`-1">
+                    <img src="gambar/sparepart/sparepart (2).jpeg" class="slide-auto2" id="slide-auto2-2">
+                    <img src="gambar/sparepart/sparepart (3).jpeg" class="slide-auto2" id="slide-auto2-3">
+                </section>
+            
+                <script>
+                    let currentSlideAuto2 = 0;
+                    const slidesAuto2 = document.querySelectorAll('.slide-auto2');
+            
+                    function showSlideAuto2(index) {
+                        slidesAuto2.forEach((slide, i) => {
+                            slide.classList.remove('active-auto2');
+                            if (i === index) {
+                                slide.classList.add('active-auto2');
+                            }
+                        });
+                    }
+            
+                    function nextSlideAuto2() {
+                        currentSlideAuto2 = (currentSlideAuto2 + 1) % slidesAuto2.length;
+                        showSlideAuto2(currentSlideAuto2);
+                    }
+            
+                    setInterval(nextSlideAuto2, 2000); // Ganti gambar setiap 2 detik
+                </script>
+            </div>
+            <div class="card p-4 bg-white rounded-lg">
+                <h3 class="text-xl font-bold">Suku Cadang Original</h3>
+                <p>Jaminan kualitas dan ketahanan suku cadang.</p>
+                <section class="slide-container-auto1">
+                    <img src="gambar/sparepart/sparepart (1).jpeg" class="slide-auto1 active-auto1" id="slide-auto`-1">
+                    <img src="gambar/sparepart/sparepart (2).jpeg" class="slide-auto1" id="slide-auto1-2">
+                    <img src="gambar/sparepart/sparepart (3).jpeg" class="slide-auto1" id="slide-auto1-3">
+                </section>
+            
+                <script>
+                    let currentSlideAuto1 = 0;
+                    const slidesAuto1 = document.querySelectorAll('.slide-auto1');
+            
+                    function showSlideAuto1(index) {
+                        slidesAuto1.forEach((slide, i) => {
+                            slide.classList.remove('active-auto1');
+                            if (i === index) {
+                                slide.classList.add('active-auto1');
+                            }
+                        });
+                    }
+            
+                    function nextSlideAuto1() {
+                        currentSlideAuto1 = (currentSlideAuto1 + 1) % slidesAuto1.length;
+                        showSlideAuto1(currentSlideAuto1);
+                    }
+            
+                    setInterval(nextSlideAuto1, 2000); // Ganti gambar setiap 2 detik
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="p-6 bg-gray-200">
+        <h2 class="text-2xl font-bold mb-4">Layanan Kami</h2>
+        <ul class="list-disc pl-6">
+            <li> Perbaikan Sliding Door</li>
+            <li>Penggantian Motor Sliding</li>
+            <li>Servis Berkala</li>
+        </ul>
+    </section>
+
+    <section class="slide-container-auto3">
+        <img src="gambar/sparepart/sparepart (4).jpeg" class="slide-auto3 active-auto3" id="slide-auto3-1">
+        <img src="gambar/sparepart/sparepart (5).jpeg" class="slide-auto3" id="slide-auto3-2">
+        <img src="gambar/sparepart/sparepart (6).jpeg" class="slide-auto3" id="slide-auto3-3">
+    </section>
+
+    <script>
+        let currentSlideAuto3 = 0;
+        const slidesAuto3 = document.querySelectorAll('.slide-auto3');
+
+        function showSlideAuto3(index) {
+            slidesAuto3.forEach((slide, i) => {
+                slide.classList.remove('active-auto3');
+                if (i === index) {
+                    slide.classList.add('active-auto3');
+                }
+            });
+        }
+
+        function nextSlideAuto3() {
+            currentSlideAuto3 = (currentSlideAuto3 + 1) % slidesAuto3.length;
+            showSlideAuto3(currentSlideAuto3);
+        }
+
+        setInterval(nextSlideAuto3, 2000); // Ganti gambar setiap 2 detik
+    </script>
+  
+    <div class="upgrade">
+        <h2>Upgrade Kendaraan Anda dengan Pintu Sliding Mobil Berkualitas</h2>
+    </div>
+
+<img src= "gambar/vector1.png" class="vector">
+    <div class="content">
+        <h3>Keunggulan Sliding Door Mobil Kami</h3>
+
+        <div class="features">
+            <div class="feature-box">
+                <i class="fas fa-lock"></i>
+                <h4>Aman dan Tahan Lama</h4>
+                <p>Pintu sliding mobil kami dirancang untuk memberikan keamanan ekstra dan daya tahan panjang untuk setiap penggunaan.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-cogs"></i>
+                <h4>Desain Modern</h4>
+                <p>Dilengkapi dengan desain minimalis dan fungsional yang membuat mobil Anda lebih elegan dan praktis.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-tools"></i>
+                <h4>Instalasi Mudah</h4>
+                <p>Proses pemasangan yang cepat dan mudah tanpa mengurangi kualitas dan kenyamanan penggunaannya.</p>
+            </div>
+        </div>
+
+        <h3>Jadikan Mobil Anda Lebih Praktis dan Stylish</h3>
+        <p>Sliding door bukan hanya memberikan kemudahan akses, tetapi juga meningkatkan tampilan kendaraan Anda dengan teknologi modern.</p>
+    </div>
+
+    <div class="lokasi"> 
+        <h2 class="text-2xl font-bold mb-4">Lokasi Kami</h2>
+</div>
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map').setView([-6.1751, 106.8650], 13); // Koordinat Jakarta
+      
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+      
+        L.marker([-6.1602593230364, 106.8222004622934]).addTo(map)
+          .bindPopup('Jl. Sukarjo Wiryopranoto No.20A, Jakarta')
+          .openPopup();
+      </script>
+
+
+    <section id="contact" class="p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-bold mb-4">Kontak Kami</h2>
+        <textarea id="message" placeholder="Deskripsikan Masalah Anda" class="border p-2 mb-2 w-full"></textarea>
+        <button onclick="sendMessage()" class="bg-blue-600 text-white p-2 rounded">Hubungi via WhatsApp</button>
+    </section>
+
+    <div class="whatsapp-button" onclick="openWhatsApp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40">
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = "6282258522901"; // Ganti dengan nomor WhatsApp
+            const message = encodeURIComponent("Halo BJ Sliding Door, Saya ingin bertanya mengenai layanan Anda.");
+            window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
+        }
+    </script>
+    
+
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
+</body>
+    <footer>
+        <p>&copy; BJ Sliding Door <br>
+            Alamat: Jl. Sukarjo Wiryopranoto No.20A, RT.1/RW.1, Kb. Klp., Kecamatan Gambir, <br>
+             Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10120.<br>
+             Telepon: 0822-5852-2901</p>
+    </footer>
+</body>
+</html>
