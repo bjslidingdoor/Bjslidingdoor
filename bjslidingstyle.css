@@ -343,17 +343,16 @@ img {
     .text-content {
         font-size: 14px; /* Menyesuaikan ukuran font pada layar kecil */
     }
-    .video-container {
-            position: relative;
-            width: 80%; /* Sesuaikan ukuran */
-            max-width: 600px; /* Batasi agar tidak terlalu besar */
-            margin: auto;
-        }
+     .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Agar tengah di layar */
+    }
 
-        .video-container iframe {
-            width: 100%;
-            height: 338px; /* Proporsi 16:9 */
-            border-radius: 10px; /* Opsional: Untuk tampilan lebih smooth */
-            border: none;
-        }
+    iframe {
+        width: 360px; /* Ukuran yang lebih kecil */
+        height: 640px; /* Format vertikal */
+        border-radius: 10px; /* Opsional: membuat sudut lebih halus */
+    }
 }
