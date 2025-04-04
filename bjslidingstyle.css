@@ -340,21 +340,16 @@ img {
     .text-content {
         font-size: 14px; /* Menyesuaikan ukuran font pada layar kecil */
     }
-    body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-            aspect-ratio: 16 / 9; /* Agar video tetap responsif */
-        }
-        .video-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+     .video-container {
+        position: relative;
+        width: 80%; /* Sesuaikan ukuran */
+        max-width: 100px; /* Biar nggak terlalu besar */
+        margin: auto;
+    }
+
+    video {
+        width: 50%;
+        height: auto;
+        border-radius: 10px; /* Opsional: Membuat sudut lebih halus */
+    }
 }
