@@ -191,23 +191,10 @@
  <h2> Testimoni</h2>
     
   <div class="video-container">
-        <video controls>
-            <source src="gambar/testi 1.mp4" type="video/mp4">
-            Browser Anda tidak mendukung video ini.
-        </video>
+        <iframe src="https://youtube.com/shorts/EI1GZ-z0zVc?si=OJ8U4NXOfr50K1Aj" 
+                allowfullscreen>
+        </iframe>
     </div>
-
-    <script>
-        function changeVideo() {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var videoSource = document.getElementById("videoSource");
-            var selectedVideo = document.getElementById("videoSelector").value;
-            
-            videoSource.src = selectedVideo;
-            videoPlayer.load(); // Reload video agar bisa diputar
-            videoPlayer.play(); // Otomatis putar video setelah diganti
-        }
-    </script>
     
     <div class="lokasi"> 
         <h2 class="text-2xl font-bold mb-4">Lokasi Kami</h2>
